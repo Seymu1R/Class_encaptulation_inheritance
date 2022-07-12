@@ -1,5 +1,3 @@
-
-
 class Person{
     constructor(name,surname,age){
         
@@ -17,7 +15,11 @@ class Person{
         }
     }
 }
-var seymur =new Person(
-    "Seymur","Manafov",17
-)
+var person1 =new Person("Xelilbey","Xelilbeyli",17);
 seymur.checkAge();
+class Student extends Person {
+constructor(name,surname,age,groupname){
+    this.groupname=groupname;
+}
+}
+var stu1=new Student("seymur","manafov",25,'p324');
